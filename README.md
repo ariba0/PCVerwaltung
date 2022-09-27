@@ -1,2 +1,0 @@
-# PCVerwaltung
-PCVerwaltung Team
