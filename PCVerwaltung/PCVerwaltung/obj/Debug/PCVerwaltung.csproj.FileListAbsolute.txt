@@ -1,0 +1,4 @@
+H:\Fächer\PCVerwaltungRepo\PCVerwaltung\PCVerwaltung\obj\Debug\MainWindow.g.cs
+H:\Fächer\PCVerwaltungRepo\PCVerwaltung\PCVerwaltung\obj\Debug\App.g.cs
+H:\Fächer\PCVerwaltungRepo\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung_MarkupCompile.cache
+H:\Fächer\PCVerwaltungRepo\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung_MarkupCompile.lref
