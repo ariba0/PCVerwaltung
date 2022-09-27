@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="310,190,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="   Benutername" HorizontalAlignment="Left" Margin="294,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.054,0.148"/>
+        <Label Content="   Passwort" HorizontalAlignment="Left" Margin="294,217,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="310,243,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <CheckBox Content="Angemeldet bleiben" HorizontalAlignment="Left" Margin="310,271,0,0" VerticalAlignment="Top"/>
+        <Button Content="Anmelden" HorizontalAlignment="Left" Margin="310,307,0,0" VerticalAlignment="Top" Width="81"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="310,362,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label Content="   Konto erstellen" HorizontalAlignment="Left" Margin="294,331,0,0" VerticalAlignment="Top" Width="111"/>
     </Grid>
 </Window>
