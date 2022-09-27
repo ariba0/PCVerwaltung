@@ -10,11 +10,17 @@ namespace PCVerwaltung.Model
     {
         protected string _bezeichner;
         protected float _preis;
+        protected PC _pc;
 
         protected HWKomponent(string bezeichner, float preis)
         {
             _bezeichner = bezeichner;
             _preis = preis;
+        }
+
+        protected void AssignToPC(PC pc)
+        {
+            _pc = pc;
         }
     }
 }

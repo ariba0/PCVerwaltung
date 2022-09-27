@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace PCVerwaltung.Model
 {
-    class Produkt
+    abstract class Produkt
     {
-        private string _bezeichner;
-        public string Bezeichner { get; set; }
+        protected string _bezeichner;
+        protected float _verkaufsPreis;
+        protected float _einkaufsPreis;
+        protected int _id;
+        
     }
 }
