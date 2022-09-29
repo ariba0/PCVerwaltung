@@ -9,7 +9,7 @@ namespace PCVerwaltung.Model.HWKomponente
     class Monitor : HWKomponent
     {
         public string Bezeichner { get => _bezeichner; set => _bezeichner = value; }
-        public Monitor(string bezeichner, float preis) : base(bezeichner, preis)
+        public Monitor(string bezeichner, float preis, string hersteller) : base(bezeichner, preis, hersteller)
         {
 
         }
