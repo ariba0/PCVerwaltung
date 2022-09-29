@@ -1,6 +1,7 @@
 ﻿using PCVerwaltung.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,7 +29,7 @@ namespace PCVerwaltung
             //InitData.GenerateUsers();
 
 
-            
+
 
 
 
@@ -62,20 +63,34 @@ namespace PCVerwaltung
         { 
 
             string username = Textbox_username.Text;
-
-            if( username.Equals(" "))
+            string password = Textbox_password.Text;
+            if( string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
             {
-
-
                 Textbox_fehler_ausgabe.Text = string.Copy("No input");
-                Console.WriteLine(Textbox_fehler_ausgabe);
-
-
-
+                Console.WriteLine(Textbox_fehler_ausgabe.Text);
+            }
+            else if(string.IsNullOrEmpty(username))
+            {
+                Textbox_fehler_ausgabe.Text = string.Copy("No username input");
+                Console.WriteLine(Textbox_fehler_ausgabe.Text);
+            }
+            else if(string.IsNullOrEmpty(password))
+            {
+                Textbox_fehler_ausgabe.Text = string.Copy("No password input");
+                Console.WriteLine(Textbox_fehler_ausgabe.Text);
             }
 
 
+            string connectionString = @"Date Source=pcverwaltung;Initial Catalog=root@localhost; User ID =Admin; Password=Root";
+            SqlConnection connection = new SqlConnection(connectionString);
 
+            connection.Open();
+
+            connection.Close();
+        }
+
+        private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
+        {
 
         }
     }
