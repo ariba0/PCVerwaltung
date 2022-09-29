@@ -4,17 +4,25 @@
 winexe
 C#
 .cs
+<<<<<<< Updated upstream
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\
+=======
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\
+>>>>>>> Stashed changes
 PCVerwaltung
 none
 false
 DEBUG;TRACE
+<<<<<<< Updated upstream
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
+=======
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
+>>>>>>> Stashed changes
 11151548125
 
 15537189667
 32583175414
 MainWindow.xaml;
 
-False
+True
 

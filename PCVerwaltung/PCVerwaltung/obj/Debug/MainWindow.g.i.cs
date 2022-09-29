@@ -73,7 +73,7 @@ namespace PCVerwaltung {
             case 1:
             
             #line 10 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.TextBox)(target)).TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.TextBox_TextChanged);
+            ((System.Windows.Controls.TextBox)(target)).TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.Username);
             
             #line default
             #line hidden
@@ -81,11 +81,22 @@ namespace PCVerwaltung {
             case 2:
             
             #line 13 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.TextBox)(target)).TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.TextBox_TextChanged_1);
+            ((System.Windows.Controls.TextBox)(target)).TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.Password);
             
             #line default
             #line hidden
             return;
+<<<<<<< Updated upstream
+=======
+            case 3:
+            
+            #line 16 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            
+            #line default
+            #line hidden
+            return;
+>>>>>>> Stashed changes
             }
             this._contentLoaded = true;
         }
