@@ -9,7 +9,7 @@ namespace PCVerwaltung.Model.HWKomponente
     class SSD : HWKomponent
     {
         public string Bezeichner { get => _bezeichner; set => _bezeichner = value; }
-        public SSD(string bezeichner, float preis) : base(bezeichner, preis)
+        public SSD(string bezeichner, float preis, string hersteller) : base(bezeichner, preis, hersteller)
         {
 
         }

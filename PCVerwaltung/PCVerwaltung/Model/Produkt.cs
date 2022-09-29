@@ -12,6 +12,13 @@ namespace PCVerwaltung.Model
         protected float _verkaufsPreis;
         protected float _einkaufsPreis;
         protected int _id;
-        
+
+        protected Produkt(string bezeichner, float verkaufsPreis, float einkaufsPreis, int id)
+        {
+            _bezeichner = bezeichner;
+            _verkaufsPreis = verkaufsPreis;
+            _einkaufsPreis = einkaufsPreis;
+            _id = id;
+        }
     }
 }
