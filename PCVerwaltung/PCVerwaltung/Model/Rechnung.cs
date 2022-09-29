@@ -8,6 +8,6 @@ namespace PCVerwaltung.Model
 {
     class Rechnung
     {
-        private Kunde _kunde;
+        private Produkt _produkt;
     }
 }

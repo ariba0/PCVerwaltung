@@ -8,6 +8,12 @@ namespace PCVerwaltung.Model
 {
     class Laptop : Produkt
     {
-        public string Bezeichner { get => _bezeichner; set => _bezeichner = value; }
+        public Laptop(string bezeichner, float verkaufsPreis, float einkaufsPreis, int id) : base(bezeichner, verkaufsPreis, einkaufsPreis, id)
+        {
+            _bezeichner = bezeichner;
+            _verkaufsPreis = verkaufsPreis;
+            _einkaufsPreis = einkaufsPreis;
+            _id = id;
+        }
     }
 }

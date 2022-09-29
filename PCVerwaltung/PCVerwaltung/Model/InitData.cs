@@ -37,7 +37,7 @@ namespace PCVerwaltung.Model
         }
 
         public static void GenerateUsers()
-        {
+        { 
             SaveUser("johnbuyman", "John Buyman", "123", User.Role.Einkauf);
             SaveUser("danascully", "Dana Scully", "123", User.Role.Sachbearbeitung);
             SaveUser("foxmulder", "Fox Mulder", "123", User.Role.Hardwarespezialist);
