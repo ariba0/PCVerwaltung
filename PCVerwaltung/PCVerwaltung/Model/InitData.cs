@@ -3,18 +3,44 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using MySql.Data.MySqlClient;
 
 namespace PCVerwaltung.Model
 {
     static class InitData
     {
-        public static List<User> GenerateUsers()
+
+        static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=pcverwaltung;";
+        public static void SaveUser(string _username, string _fullname, string _password, User.Role _role)
         {
-            List<User> userList = new List<User>();
-            userList.Add(new User(User.Role.Einkauf, "John Buyman", "johnbuyman", "123"));
-            userList.Add(new User(User.Role.Hardwarespezialist, "Dana Scully", "danascully", "123"));
-            userList.Add(new User(User.Role.Sachbearbeitung, "Fox Mulder", "foxmulder", "123"));
-            return userList;
+            string query = "INSERT INTO user(`username`, `fullname`, `password`, `role`) VALUES ('"+ _username +"', '" + _fullname + "', '" + _password + "', '" + _role.ToString() + "')";
+
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 60;
+
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("User succesfully registered");
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                // Show any error message.
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public static void GenerateUsers()
+        {
+            SaveUser("johnbuyman", "John Buyman", "123", User.Role.Einkauf);
+            SaveUser("danascully", "Dana Scully", "123", User.Role.Sachbearbeitung);
+            SaveUser("foxmulder", "Fox Mulder", "123", User.Role.Hardwarespezialist);
         }
     }
 }

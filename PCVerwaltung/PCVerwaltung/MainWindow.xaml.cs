@@ -25,7 +25,7 @@ namespace PCVerwaltung
         public MainWindow()
         {
             InitializeComponent();
-            Users = InitData.GenerateUsers();
+            //InitData.GenerateUsers();
 
 
 
