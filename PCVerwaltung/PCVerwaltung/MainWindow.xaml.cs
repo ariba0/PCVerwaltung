@@ -47,5 +47,36 @@ namespace PCVerwaltung
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+      
+
+
+
+
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        { 
+
+            string username = Textbox_username.Text;
+
+            if( username.Equals(" "))
+            {
+
+
+                Textbox_fehler_ausgabe.Text = string.Copy("No input");
+                Console.WriteLine(Textbox_fehler_ausgabe);
+
+
+
+            }
+
+
+
+
+        }
     }
 }

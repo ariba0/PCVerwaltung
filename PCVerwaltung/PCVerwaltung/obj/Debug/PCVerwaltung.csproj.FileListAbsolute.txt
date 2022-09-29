@@ -46,3 +46,10 @@ C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\De
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.csproj.CopyComplete
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.exe
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.pdb
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.csprojAssemblyReference.cache
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\MainWindow.g.cs
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\App.g.cs
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung_MarkupCompile.cache
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung_MarkupCompile.lref
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.exe
+H:\Zeitweise\PCVerwaltung\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.pdb
