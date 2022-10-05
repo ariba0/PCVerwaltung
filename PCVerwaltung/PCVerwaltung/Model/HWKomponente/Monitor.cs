@@ -8,10 +8,11 @@ namespace PCVerwaltung.Model.HWKomponente
 {
     class Monitor : HWKomponent
     {
+        private int _resolution;
         public string Bezeichner { get => _bezeichner; set => _bezeichner = value; }
-        public Monitor(string bezeichner, float preis, string hersteller) : base(bezeichner, preis, hersteller)
+        public Monitor(string bezeichner, float preis, string hersteller, int resolution) : base(bezeichner, preis, hersteller)
         {
-
+            _resolution = resolution;
         }
     }
 }
