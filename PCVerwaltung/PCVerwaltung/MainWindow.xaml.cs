@@ -77,8 +77,10 @@ namespace PCVerwaltung
             // Öffne das jeweilige Menu abhängig von User.Role
             switch (validUser)
             {
-                case (int) User.Role.Einkauf:
-                    txbOutput.Text = "Einkauf";
+                case (int)User.Role.Einkauf:
+                    PurchaseWindow purch1 = new PurchaseWindow();
+                    purch1.Show();
+                    this.Close();
                     break;
                 case (int) User.Role.Sachbearbeitung:
                     txbOutput.Text = "Sachbearbeitung";
