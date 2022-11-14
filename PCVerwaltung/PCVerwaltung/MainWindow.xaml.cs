@@ -31,12 +31,6 @@ namespace PCVerwaltung
 
 
 
-
-
-
-
-
-
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -62,31 +56,42 @@ namespace PCVerwaltung
         private void Button_Click_1(object sender, RoutedEventArgs e)
         { 
 
-            string username = Textbox_username.Text;
-            string password = Textbox_password.Text;
+            string username = txbUsername.Text;
+            string password = txbPassword.Text;
             if( string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
             {
-                Textbox_fehler_ausgabe.Text = string.Copy("No input");
-                Console.WriteLine(Textbox_fehler_ausgabe.Text);
+                txbOutput.Text = string.Copy("No input");
             }
             else if(string.IsNullOrEmpty(username))
             {
-                Textbox_fehler_ausgabe.Text = string.Copy("No username input");
-                Console.WriteLine(Textbox_fehler_ausgabe.Text);
+                txbOutput.Text = string.Copy("No username input");
             }
             else if(string.IsNullOrEmpty(password))
             {
-                Textbox_fehler_ausgabe.Text = string.Copy("No password input");
-                Console.WriteLine(Textbox_fehler_ausgabe.Text);
+                txbOutput.Text = string.Copy("No password input");
             }
 
 
-            string connectionString = @"Date Source=pcverwaltung;Initial Catalog=root@localhost; User ID =Admin; Password=Root";
-            SqlConnection connection = new SqlConnection(connectionString);
+            User.Role validUser = InitData.LoginUser(username, password);
 
-            connection.Open();
-
-            connection.Close();
+            // Öffne das jeweilige Menu abhängig von User.Role
+            switch (validUser)
+            {
+                case User.Role.Einkauf:
+                    txbOutput.Text = "Einkauf";
+                    break;
+                case User.Role.Sachbearbeitung:
+                    txbOutput.Text = "Sachbearbeitung";
+                    break;
+                case User.Role.Hardwarespezialist:
+                    txbOutput.Text = "Hardwarespezialist";
+                    break;
+                case User.Role.NoUser:
+                    MessageBox.Show("Benutzerdaten sind nicht gültig.");
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)

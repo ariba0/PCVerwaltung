@@ -36,6 +36,28 @@ namespace PCVerwaltung.Model
             }
         }
 
+        public static User.Role LoginUser(string _username, string _password)
+        {
+            using (var connection = new MySqlConnection(connectionString))
+            {
+                connection.Open();
+                string queryString = "SELECT role FROM user WHERE username = '" + _username + "' AND password = '" + _password + "'";
+                MySqlCommand command = new MySqlCommand(queryString, connection);
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return (User.Role) Convert.ToInt32(reader[0]);
+                    } else
+                    {
+                        return User.Role.NoUser;
+                    }
+                }
+            }
+
+
+        }
+
         public static void GenerateUsers()
         { 
             SaveUser("johnbuyman", "John Buyman", "123", User.Role.Einkauf);

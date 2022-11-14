@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PCVerwaltung"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="350">
+
     <Grid>
-        <TextBox d:Name="Textbox_username"  HorizontalAlignment="Left" Height="23" Margin="310,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <Label Content="   username" HorizontalAlignment="Left" Margin="294,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.054,0.148"/>
-        <Label Content="   password" HorizontalAlignment="Left" Margin="294,217,0,0" VerticalAlignment="Top"/>
-        <TextBox d:Name="Textbox_password" HorizontalAlignment="Left" Height="23" Margin="310,243,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
-        <CheckBox Content="stay signed in" HorizontalAlignment="Left" Margin="310,271,0,0" VerticalAlignment="Top"/>
-        <Button Content="sign in" HorizontalAlignment="Left" Margin="310,307,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
-        <TextBox d:Name="Textbox_fehler_ausgabe"  HorizontalAlignment="Left" Height="23" Margin="310,342,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_2"/>
+        <TextBox d:Name="txbUsername"  HorizontalAlignment="Left" Height="23" Margin="105,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Benutzername" HorizontalAlignment="Left" Margin="105,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.054,0.148"/>
+        <Label Content="Passwort" HorizontalAlignment="Left" Margin="105,129,0,0" VerticalAlignment="Top"/>
+        <TextBox d:Name="txbPassword" HorizontalAlignment="Left" Height="23" Margin="105,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <Button Content="sign in" HorizontalAlignment="Left" Margin="105,197,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
+        <TextBox d:Name="txbOutput"  HorizontalAlignment="Left" Height="23" Margin="66,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" TextChanged="TextBox_TextChanged_2"/>
     </Grid>
 </Window>

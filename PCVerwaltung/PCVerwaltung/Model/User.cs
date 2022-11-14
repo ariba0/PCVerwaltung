@@ -11,7 +11,8 @@ namespace PCVerwaltung.Model
         public enum Role {
             Einkauf,
             Sachbearbeitung,
-            Hardwarespezialist
+            Hardwarespezialist,
+            NoUser
         }
 
         private Role _role;
