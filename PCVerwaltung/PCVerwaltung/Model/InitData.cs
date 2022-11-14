@@ -36,7 +36,7 @@ namespace PCVerwaltung.Model
             }
         }
 
-        public static User.Role LoginUser(string _username, string _password)
+        public static int LoginUser(string _username, string _password)
         {
             using (var connection = new MySqlConnection(connectionString))
             {
@@ -47,10 +47,20 @@ namespace PCVerwaltung.Model
                 {
                     if (reader.Read())
                     {
-                        return (User.Role) Convert.ToInt32(reader[0]);
+                        switch (reader[0])
+                        {
+                            case "Sachbearbeitung":
+                                return (int)User.Role.Sachbearbeitung;
+                            case "Hardwarespezialist":
+                                return (int)User.Role.Hardwarespezialist;
+                            case "Einkauf":
+                                return (int)User.Role.Einkauf;
+                            default:
+                                return (int)User.Role.NoUser;
+                        }
                     } else
                     {
-                        return User.Role.NoUser;
+                        return (int) User.Role.NoUser;
                     }
                 }
             }

@@ -72,21 +72,21 @@ namespace PCVerwaltung
             }
 
 
-            User.Role validUser = InitData.LoginUser(username, password);
+            int validUser = InitData.LoginUser(username, password);
 
             // Öffne das jeweilige Menu abhängig von User.Role
             switch (validUser)
             {
-                case User.Role.Einkauf:
+                case (int) User.Role.Einkauf:
                     txbOutput.Text = "Einkauf";
                     break;
-                case User.Role.Sachbearbeitung:
+                case (int) User.Role.Sachbearbeitung:
                     txbOutput.Text = "Sachbearbeitung";
                     break;
-                case User.Role.Hardwarespezialist:
+                case (int) User.Role.Hardwarespezialist:
                     txbOutput.Text = "Hardwarespezialist";
                     break;
-                case User.Role.NoUser:
+                case (int) User.Role.NoUser:
                     MessageBox.Show("Benutzerdaten sind nicht gültig.");
                     break;
                 default:
