@@ -8,11 +8,11 @@
         Title="MainWindow" Height="400" Width="350">
 
     <Grid>
-        <TextBox d:Name="txbUsername"  HorizontalAlignment="Left" Height="23" Margin="105,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txbUsername"  HorizontalAlignment="Left" Height="23" Margin="105,103,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <Label Content="Benutzername" HorizontalAlignment="Left" Margin="105,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.054,0.148"/>
         <Label Content="Passwort" HorizontalAlignment="Left" Margin="105,129,0,0" VerticalAlignment="Top"/>
-        <TextBox d:Name="txbPassword" HorizontalAlignment="Left" Height="23" Margin="105,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="txbPassword" HorizontalAlignment="Left" Height="23" Margin="105,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_1"/>
         <Button Content="sign in" HorizontalAlignment="Left" Margin="105,197,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_1"/>
-        <TextBox d:Name="txbOutput"  HorizontalAlignment="Left" Height="23" Margin="66,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" TextChanged="TextBox_TextChanged_2"/>
+        <TextBox x:Name="txbOutput"  HorizontalAlignment="Left" Height="23" Margin="66,242,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" TextChanged="TextBox_TextChanged_2"/>
     </Grid>
 </Window>
