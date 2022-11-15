@@ -83,7 +83,9 @@ namespace PCVerwaltung
                     this.Close();
                     break;
                 case (int) User.Role.Sachbearbeitung:
-                    txbOutput.Text = "Sachbearbeitung";
+                    SachberarbeitungWindow windowSB = new SachberarbeitungWindow();
+                    windowSB.Show();
+                    this.Close();
                     break;
                 case (int) User.Role.Hardwarespezialist:
                     txbOutput.Text = "Hardwarespezialist";
