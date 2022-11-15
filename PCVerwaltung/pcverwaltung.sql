@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 29. Sep 2022 um 09:11
+-- Erstellungszeit: 15. Nov 2022 um 12:10
 -- Server-Version: 10.4.18-MariaDB
 -- PHP-Version: 8.0.3
 
@@ -20,6 +20,44 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `pcverwaltung`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `finanzierung`
+--
+
+CREATE TABLE `finanzierung` (
+  `id` int(11) NOT NULL,
+  `runtime` int(11) NOT NULL,
+  `rate` float NOT NULL,
+  `finalcost` float NOT NULL,
+  `kunden_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `kunden`
+--
+
+CREATE TABLE `kunden` (
+  `id` int(11) NOT NULL,
+  `fullname` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `rechnungen`
+--
+
+CREATE TABLE `rechnungen` (
+  `id` int(11) NOT NULL,
+  `product` varchar(255) NOT NULL,
+  `price` int(100) NOT NULL,
+  `kunden_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -48,10 +86,68 @@ INSERT INTO `user` (`username`, `fullname`, `password`, `role`) VALUES
 --
 
 --
+-- Indizes für die Tabelle `finanzierung`
+--
+ALTER TABLE `finanzierung`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `kunden_id` (`kunden_id`);
+
+--
+-- Indizes für die Tabelle `kunden`
+--
+ALTER TABLE `kunden`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indizes für die Tabelle `rechnungen`
+--
+ALTER TABLE `rechnungen`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `kunden_id` (`kunden_id`);
+
+--
 -- Indizes für die Tabelle `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`username`);
+
+--
+-- AUTO_INCREMENT für exportierte Tabellen
+--
+
+--
+-- AUTO_INCREMENT für Tabelle `finanzierung`
+--
+ALTER TABLE `finanzierung`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT für Tabelle `kunden`
+--
+ALTER TABLE `kunden`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT für Tabelle `rechnungen`
+--
+ALTER TABLE `rechnungen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints der exportierten Tabellen
+--
+
+--
+-- Constraints der Tabelle `finanzierung`
+--
+ALTER TABLE `finanzierung`
+  ADD CONSTRAINT `finanzierung_ibfk_1` FOREIGN KEY (`kunden_id`) REFERENCES `kunden` (`id`);
+
+--
+-- Constraints der Tabelle `rechnungen`
+--
+ALTER TABLE `rechnungen`
+  ADD CONSTRAINT `rechnungen_ibfk_1` FOREIGN KEY (`kunden_id`) REFERENCES `kunden` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
