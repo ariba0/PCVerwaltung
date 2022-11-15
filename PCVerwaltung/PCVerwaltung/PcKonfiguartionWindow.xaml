@@ -1,0 +1,20 @@
+﻿<Window x:Class="PCVerwaltung.PcKonfiguartionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PCVerwaltung"
+        mc:Ignorable="d"
+        Title="PcKonfiguartionWindow" Height="279.345" Width="331.716">
+    <Grid Margin="0,0,-0.4,13">
+        <Label Content="CPU" HorizontalAlignment="Left" Margin="33,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.591,-0.126"/>
+        <Label Content="Mainboard" HorizontalAlignment="Left" Margin="33,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="SSD" HorizontalAlignment="Left" Margin="33,142,0,0" VerticalAlignment="Top"/>
+        <Label Content="Monitor" HorizontalAlignment="Left" Margin="33,173,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CPUComboBox" HorizontalAlignment="Left" Margin="147,83,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="MainboardComboBox" HorizontalAlignment="Left" Margin="147,114,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="SSDComboBox" HorizontalAlignment="Left" Margin="147,145,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="MonitorComboBox" HorizontalAlignment="Left" Margin="147,176,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

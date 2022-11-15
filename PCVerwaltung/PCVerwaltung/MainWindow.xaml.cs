@@ -88,7 +88,9 @@ namespace PCVerwaltung
                     this.Close();
                     break;
                 case (int) User.Role.Hardwarespezialist:
-                    txbOutput.Text = "Hardwarespezialist";
+                    PcKonfiguartionWindow pckonfig = new PcKonfiguartionWindow();
+                    pckonfig.Show();
+                    this.Close();
                     break;
                 case (int) User.Role.NoUser:
                     MessageBox.Show("Benutzerdaten sind nicht gültig.");
