@@ -113,11 +113,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="PcKonfigurationWindow.xaml.cs">
-      <DependentUpon>PcKonfigurationWindow.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Model\Sachbearbeitung\Finanzierung.cs" />
+    <Compile Include="Model\Sachbearbeitung\Kunde.cs" />
+    <Compile Include="Model\Sachbearbeitung\KundenSQL.cs" />
+    <Compile Include="Model\Sachbearbeitung\Rechnung.cs" />
     <Compile Include="PurchaseWindow.xaml.cs">
       <DependentUpon>PurchaseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SachberarbeitungWindow.xaml.cs">
+      <DependentUpon>SachberarbeitungWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -131,11 +135,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PcKonfigurationWindow.xaml">
+    <Page Include="PurchaseWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PurchaseWindow.xaml">
+    <Page Include="SachberarbeitungWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

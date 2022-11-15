@@ -92,3 +92,8 @@ C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\P
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.pdb
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PurchaseWindow.g.cs
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PurchaseWindow.baml
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.csprojAssemblyReference.cache
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PurchaseWindow.g.cs
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\SachberarbeitungWindow.g.cs
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PurchaseWindow.baml
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\SachberarbeitungWindow.baml
