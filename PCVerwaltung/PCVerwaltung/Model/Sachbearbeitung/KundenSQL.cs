@@ -10,9 +10,9 @@ namespace PCVerwaltung.Model.Sachbearbeitung
 {
     class KundenSQL
     {
-        private static List<Kunde> _kunden;
-        private static List<Rechnung> _rechnungen;
-        private static List<Finanzierung> _finanzierungen;
+        public static List<Kunde> _kunden;
+        public static List<Rechnung> _rechnungen;
+        public static List<Finanzierung> _finanzierungen;
 
         static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=pcverwaltung;";
         public static void SaveKunden(string _kundenName)

@@ -9,6 +9,10 @@ namespace PCVerwaltung.Model.Sachbearbeitung
     class Kunde
     {
         private string _name;
+        public string Name
+        {
+            get { return _name; }
+        }
         private int _id;
         private List<Rechnung> _rechnungen;
         private List<Finanzierung> _finanzierungen;

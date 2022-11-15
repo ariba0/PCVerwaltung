@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\gil.caetano\Documents\GitHub\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\
 PCVerwaltung
 none
 false
 DEBUG;TRACE
-C:\Users\gil.caetano\Documents\GitHub\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
-4956837785
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
+6-1074018313
 
-2218214129
-32-1256325561
-MainWindow.xaml;PcKonfiguartionWindow.xaml;PurchaseWindow.xaml;SachberarbeitungWindow.xaml;
+241959869862
+32583175414
+MainWindow.xaml;Model\Sachbearbeitung\Windows\KundenErstellen.xaml;Model\Sachbearbeitung\Windows\KundenListe.xaml;PcKonfiguartionWindow.xaml;PurchaseWindow.xaml;SachberarbeitungWindow.xaml;
 
 True
 
