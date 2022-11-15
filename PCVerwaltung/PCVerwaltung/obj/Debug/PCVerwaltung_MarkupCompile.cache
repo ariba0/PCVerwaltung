@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
-22137271405
+71951900824
 
-15398152493
+20-1152962747
 32-1902538415
-MainWindow.xaml;PurchaseWindow.xaml;
+MainWindow.xaml;PurchaseWindows\CPUPurchWindow.xaml;PurchaseWindows\MainboardPurchWindow.xaml;PurchaseWindows\MonitorPurchWindow.xaml;PurchaseWindows\PurchaseWindow.xaml;PurchaseWindows\PurchHWKWindow.xaml;PurchaseWindows\SSDPurchWindow.xaml;
 
-False
+True
 

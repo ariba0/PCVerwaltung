@@ -12,14 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace PCVerwaltung
+namespace PCVerwaltung.PurchaseWindows
 {
     /// <summary>
-    /// Interaktionslogik für PurchaseWindow.xaml
+    /// Interaktionslogik für MainboardPurchWindow.xaml
     /// </summary>
-    public partial class PurchaseWindow : Window
+    public partial class MainboardPurchWindow : Window
     {
-        public PurchaseWindow()
+        public MainboardPurchWindow()
         {
             InitializeComponent();
         }

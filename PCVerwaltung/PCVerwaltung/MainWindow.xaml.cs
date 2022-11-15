@@ -78,7 +78,7 @@ namespace PCVerwaltung
             switch (validUser)
             {
                 case (int)User.Role.Einkauf:
-                    PurchaseWindow purch1 = new PurchaseWindow();
+                    PurchaseWindows.PurchaseWindow purch1 = new PurchaseWindows.PurchaseWindow();
                     purch1.Show();
                     this.Close();
                     break;

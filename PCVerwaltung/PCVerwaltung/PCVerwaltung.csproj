@@ -113,8 +113,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="PurchaseWindow.xaml.cs">
+    <Compile Include="PurchaseWindows\CPUPurchWindow.xaml.cs">
+      <DependentUpon>CPUPurchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseWindows\MainboardPurchWindow.xaml.cs">
+      <DependentUpon>MainboardPurchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseWindows\MonitorPurchWindow.xaml.cs">
+      <DependentUpon>MonitorPurchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseWindows\PurchaseWindow.xaml.cs">
       <DependentUpon>PurchaseWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseWindows\PurchHWKWindow.xaml.cs">
+      <DependentUpon>PurchHWKWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseWindows\SSDPurchWindow.xaml.cs">
+      <DependentUpon>SSDPurchWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -128,7 +143,27 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PurchaseWindow.xaml">
+    <Page Include="PurchaseWindows\CPUPurchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PurchaseWindows\MainboardPurchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PurchaseWindows\MonitorPurchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PurchaseWindows\PurchaseWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PurchaseWindows\PurchHWKWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PurchaseWindows\SSDPurchWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
