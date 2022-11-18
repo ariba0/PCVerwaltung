@@ -88,7 +88,7 @@ namespace PCVerwaltung
                     this.Close();
                     break;
                 case (int) User.Role.Hardwarespezialist:
-                    PcKonfiguartionWindow pckonfig = new PcKonfiguartionWindow();
+                    PcKonfigurationWindow pckonfig = new PcKonfigurationWindow();
                     pckonfig.Show();
                     this.Close();
                     break;

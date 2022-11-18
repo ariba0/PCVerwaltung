@@ -113,6 +113,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Kunde.cs" />
+    <Compile Include="Model\Laptop.cs" />
+    <Compile Include="Model\Rechnung.cs" />
+    <Compile Include="Model\Sachbearbeitung\Finanzierung.cs" />
+    <Compile Include="Model\Sachbearbeitung\Kunde.cs" />
+    <Compile Include="Model\Sachbearbeitung\KundenSQL.cs" />
+    <Compile Include="Model\Sachbearbeitung\Rechnung.cs" />
+    <Compile Include="Model\Sachbearbeitung\Windows\KundenErstellen.xaml.cs">
+      <DependentUpon>KundenErstellen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sachbearbeitung\Windows\KundenListe.xaml.cs">
+      <DependentUpon>KundenListe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Server.cs" />
+    <Compile Include="PcKonfigurationWindow.xaml.cs">
+      <DependentUpon>PcKonfigurationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pc_stammdaten.xaml.cs">
+      <DependentUpon>pc_stammdaten.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PurchaseWindows\CPUPurchWindow.xaml.cs">
       <DependentUpon>CPUPurchWindow.xaml</DependentUpon>
     </Compile>
@@ -131,6 +151,9 @@
     <Compile Include="PurchaseWindows\SSDPurchWindow.xaml.cs">
       <DependentUpon>SSDPurchWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SachberarbeitungWindow.xaml.cs">
+      <DependentUpon>SachberarbeitungWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -143,6 +166,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Model\Sachbearbeitung\Windows\KundenErstellen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Model\Sachbearbeitung\Windows\KundenListe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PcKonfigurationWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="pc_stammdaten.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PurchaseWindows\CPUPurchWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +205,10 @@
     <Page Include="PurchaseWindows\SSDPurchWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SachberarbeitungWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

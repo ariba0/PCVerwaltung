@@ -32,6 +32,11 @@ namespace PCVerwaltung.PurchaseWindows
             PreisTxtb.Text = null;
         }
 
+        private void CompleteBtnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void BackBtnClick(object sender, RoutedEventArgs e)
         {
             PurchHWKWindow PurchHWKWin1 = new PurchHWKWindow();

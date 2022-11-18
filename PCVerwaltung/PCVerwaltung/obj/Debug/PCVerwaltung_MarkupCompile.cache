@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\
 PCVerwaltung
 none
 false
 DEBUG;TRACE
-C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
-71951900824
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
+12-1311478598
 
-20-1152962747
-32-1902538415
-MainWindow.xaml;PurchaseWindows\CPUPurchWindow.xaml;PurchaseWindows\MainboardPurchWindow.xaml;PurchaseWindows\MonitorPurchWindow.xaml;PurchaseWindows\PurchaseWindow.xaml;PurchaseWindows\PurchHWKWindow.xaml;PurchaseWindows\SSDPurchWindow.xaml;
+33566032631
+32583175414
+MainWindow.xaml;Model\Sachbearbeitung\Windows\KundenErstellen.xaml;Model\Sachbearbeitung\Windows\KundenListe.xaml;PcKonfigurationWindow.xaml;pc_stammdaten.xaml;PurchaseWindows\CPUPurchWindow.xaml;PurchaseWindows\MainboardPurchWindow.xaml;PurchaseWindows\MonitorPurchWindow.xaml;PurchaseWindows\PurchaseWindow.xaml;PurchaseWindows\PurchHWKWindow.xaml;PurchaseWindows\SSDPurchWindow.xaml;SachberarbeitungWindow.xaml;
 
-True
+False
 
