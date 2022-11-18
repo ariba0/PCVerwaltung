@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PCVerwaltung.Model.Sachbearbeitung.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,27 @@ namespace PCVerwaltung
     /// </summary>
     public partial class SachberarbeitungWindow : Window
     {
+
         public SachberarbeitungWindow()
         {
             InitializeComponent();
+        }
+
+        private void addKundeButton(object sender, RoutedEventArgs e)
+        {
+            KundenErstellen menu = new KundenErstellen();
+            Grid.SetColumn(menu, 1);
+            MainGrid.Children.Add(menu);
+        }
+
+        private void addRechnungButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void addfinanzierungButton(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
