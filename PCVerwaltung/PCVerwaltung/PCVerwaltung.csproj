@@ -123,6 +123,9 @@
     <Compile Include="Model\Sachbearbeitung\Windows\KundenErstellen.xaml.cs">
       <DependentUpon>KundenErstellen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Sachbearbeitung\Windows\KundenInfo.xaml.cs">
+      <DependentUpon>KundenInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\Sachbearbeitung\Windows\KundenListe.xaml.cs">
       <DependentUpon>KundenListe.xaml</DependentUpon>
     </Compile>
@@ -169,6 +172,10 @@
     <Page Include="Model\Sachbearbeitung\Windows\KundenErstellen.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Model\Sachbearbeitung\Windows\KundenInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Model\Sachbearbeitung\Windows\KundenListe.xaml">
       <Generator>MSBuild:Compile</Generator>

@@ -20,6 +20,7 @@ namespace PCVerwaltung
     /// </summary>
     public partial class SachberarbeitungWindow : Window
     {
+        UserControl currentControl;
 
         public SachberarbeitungWindow()
         {
@@ -28,9 +29,12 @@ namespace PCVerwaltung
 
         private void addKundeButton(object sender, RoutedEventArgs e)
         {
-            KundenErstellen menu = new KundenErstellen();
-            Grid.SetColumn(menu, 1);
-            MainGrid.Children.Add(menu);
+            if (currentControl != null)
+                MainGrid.Children.Remove(currentControl);
+
+            currentControl = new KundenErstellen();
+            Grid.SetColumn(currentControl, 1);
+            MainGrid.Children.Add(currentControl);
         }
 
         private void addRechnungButton(object sender, RoutedEventArgs e)
@@ -41,6 +45,16 @@ namespace PCVerwaltung
         private void addfinanzierungButton(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void getKundenBtn(object sender, RoutedEventArgs e)
+        {
+            if (currentControl != null)
+                MainGrid.Children.Remove(currentControl);
+
+            currentControl = new KundenListe();
+            Grid.SetColumn(currentControl, 1);
+            MainGrid.Children.Add(currentControl);
         }
     }
 }

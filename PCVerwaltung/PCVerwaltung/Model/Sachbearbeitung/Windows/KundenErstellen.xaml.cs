@@ -18,7 +18,7 @@ namespace PCVerwaltung.Model.Sachbearbeitung.Windows
     /// <summary>
     /// Interaktionslogik für KundenErstellen.xaml
     /// </summary>
-    public partial class KundenErstellen : Panel
+    public partial class KundenErstellen : UserControl
     {
         public KundenErstellen() : base()
         {

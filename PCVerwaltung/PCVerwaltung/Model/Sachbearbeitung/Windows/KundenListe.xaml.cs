@@ -18,11 +18,20 @@ namespace PCVerwaltung.Model.Sachbearbeitung.Windows
     /// <summary>
     /// Interaktionslogik für KundenListe.xaml
     /// </summary>
-    public partial class KundenListe : Page
+    public partial class KundenListe : UserControl
     {
         public KundenListe()
         {
             InitializeComponent();
+
+            KundenSQL.UpdateLocal();
+
+            foreach(var kunde in KundenSQL._kunden)
+            {
+                KundenInfo newEntry = new KundenInfo();
+                newEntry.kundenInfoFullname.Content = kunde.Name;
+                stackKunden.Children.Add(newEntry);
+            }
         }
     }
 }

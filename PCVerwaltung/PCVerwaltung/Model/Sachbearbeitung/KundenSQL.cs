@@ -17,7 +17,7 @@ namespace PCVerwaltung.Model.Sachbearbeitung
         static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=pcverwaltung;";
         public static void SaveKunden(string _kundenName)
         {
-            string query = "INSERT INTO kunden('fullname') VALUES ('" + _kundenName + "')";
+            string query = "INSERT INTO kunden(`fullname`) VALUES ('" + _kundenName + "')";
 
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
@@ -40,6 +40,11 @@ namespace PCVerwaltung.Model.Sachbearbeitung
             }
         }
 
+        public static void UpdateLocal()
+        {
+            _kunden = GetKunden();
+        }
+
         public static List<Kunde> GetKunden()
         {
             string query = "SELECT * FROM kunden";
@@ -47,12 +52,22 @@ namespace PCVerwaltung.Model.Sachbearbeitung
             MySqlConnection dbConnection = new MySqlConnection(connectionString);
             MySqlCommand dbCMD = new MySqlCommand(query, dbConnection);
             List<Kunde> kunden = new List<Kunde>();
-            using (var reader = dbCMD.ExecuteReader())
+
+            try
             {
-                while (reader.Read())
+                dbConnection.Open();
+                using (var reader = dbCMD.ExecuteReader())
                 {
-                    kunden.Add(new Kunde((int)reader["fullname"], reader["fullname"].ToString()));
+                    while (reader.Read())
+                    {
+                        kunden.Add(new Kunde((int)reader["id"], reader["fullname"].ToString()));
+                    }
                 }
+                dbConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
             return kunden;
         }
@@ -95,7 +110,7 @@ namespace PCVerwaltung.Model.Sachbearbeitung
 
         public static void SaveFinanzierung(int runtime, double rate, double finalcost, int kundenid)
         {
-            string query = "INSERT INTO finanzierung( 'runtime', 'rate', 'finalcost', 'kundenid')" +
+            string query = "INSERT INTO finanzierung( `runtime`, `rate`, `finalcost`, `kundenid`)" +
                 "VALUES('" + runtime +"','" + rate +"','" + finalcost +"','" + kundenid +"')";
 
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
@@ -119,7 +134,7 @@ namespace PCVerwaltung.Model.Sachbearbeitung
 
         public static void SaveRechnung(double price, string product, int kundenid)
         {
-            string query = "INSERT INTO rechnung('price', 'product', 'kundenid')" +
+            string query = "INSERT INTO rechnung(`price`, `product`, `kundenid`)" +
                 "VALUES('" + price +"','" + product +"', '" + kundenid +"')";
 
 

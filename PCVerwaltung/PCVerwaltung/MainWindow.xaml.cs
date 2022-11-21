@@ -1,4 +1,5 @@
 ﻿using PCVerwaltung.Model;
+using PCVerwaltung.Model.Sachbearbeitung;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -28,7 +29,12 @@ namespace PCVerwaltung
             InitializeComponent();
             //InitData.GenerateUsers();
 
+            KundenSQL.UpdateLocal();
 
+
+            SachberarbeitungWindow windowSB = new SachberarbeitungWindow();
+            windowSB.Show();
+            this.Close();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
