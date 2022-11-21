@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 15. Nov 2022 um 12:10
+-- Erstellungszeit: 21. Nov 2022 um 09:07
 -- Server-Version: 10.4.18-MariaDB
 -- PHP-Version: 8.0.3
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `pcverwaltung`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `cpu`
+--
+
+CREATE TABLE `cpu` (
+  `idcpu` int(11) NOT NULL,
+  `producer` varchar(45) DEFAULT NULL,
+  `model` varchar(45) DEFAULT NULL,
+  `frequence` double DEFAULT NULL,
+  `price` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -86,6 +100,12 @@ INSERT INTO `user` (`username`, `fullname`, `password`, `role`) VALUES
 --
 
 --
+-- Indizes für die Tabelle `cpu`
+--
+ALTER TABLE `cpu`
+  ADD PRIMARY KEY (`idcpu`);
+
+--
 -- Indizes für die Tabelle `finanzierung`
 --
 ALTER TABLE `finanzierung`
@@ -114,6 +134,12 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT für exportierte Tabellen
 --
+
+--
+-- AUTO_INCREMENT für Tabelle `cpu`
+--
+ALTER TABLE `cpu`
+  MODIFY `idcpu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT für Tabelle `finanzierung`

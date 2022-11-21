@@ -142,6 +142,7 @@
     <Compile Include="PurchaseWindows\MonitorPurchWindow.xaml.cs">
       <DependentUpon>MonitorPurchWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PurchaseWindows\PurchaseMgmt.cs" />
     <Compile Include="PurchaseWindows\PurchaseWindow.xaml.cs">
       <DependentUpon>PurchaseWindow.xaml</DependentUpon>
     </Compile>
