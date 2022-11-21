@@ -23,5 +23,22 @@ namespace PCVerwaltung.PurchaseWindows
         {
             InitializeComponent();
         }
+
+        private void CompleteBtnClick(object sender, RoutedEventArgs e)
+        {
+            PurchaseMgmt.MainboardtoSQL(HerstellerTxtb.Text, ModellTxtb.Text, ArchitectureComboBox.SelectedItem, PreisTxtb.Text);
+
+            ModellTxtb.Text = null;
+            HerstellerTxtb.Text = null;
+            ArchitectureComboBox.SelectedIndex = 0;
+            PreisTxtb.Text = null;
+        }
+
+        private void BackBtnClick(object sender, RoutedEventArgs e)
+        {
+            PurchHWKWindow PurchHWKWin1 = new PurchHWKWindow();
+            PurchHWKWin1.Show();
+            this.Close();
+        }
     }
 }

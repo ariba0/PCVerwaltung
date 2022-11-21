@@ -64,7 +64,6 @@ C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\P
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PurchaseWindows\PurchaseWindow.baml
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PurchaseWindows\PurchHWKWindow.baml
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PurchaseWindows\SSDPurchWindow.baml
-C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.csprojAssemblyReference.cache
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\MainWindow.g.cs
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenErstellen.g.cs
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenListe.g.cs
@@ -126,6 +125,21 @@ C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\De
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.exe
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.pdb
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Themes\Generic.baml
+<<<<<<< HEAD
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.csprojAssemblyReference.cache
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenInfo.g.cs
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenInfo.baml
+=======
+C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenErstellen.g.cs
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenListe.g.cs
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PcKonfigurationWindow.g.cs
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\pc_stammdaten.g.cs
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\SachberarbeitungWindow.g.cs
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenErstellen.baml
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenListe.baml
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PcKonfigurationWindow.baml
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\pc_stammdaten.baml
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\SachberarbeitungWindow.baml
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Themes\Generic.baml
+>>>>>>> 5b08e51e7cf7cfcc4cf5001464b88787d36817d0

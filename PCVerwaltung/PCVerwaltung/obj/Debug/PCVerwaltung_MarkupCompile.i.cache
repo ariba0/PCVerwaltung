@@ -4,17 +4,26 @@
 winexe
 C#
 .cs
-C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\
 PCVerwaltung
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
 14-1883397964
 
 35-1318483595
 32583175414
 MainWindow.xaml;Model\Sachbearbeitung\Windows\KundenErstellen.xaml;Model\Sachbearbeitung\Windows\KundenInfo.xaml;Model\Sachbearbeitung\Windows\KundenListe.xaml;PcKonfigurationWindow.xaml;pc_stammdaten.xaml;PurchaseWindows\CPUPurchWindow.xaml;PurchaseWindows\MainboardPurchWindow.xaml;PurchaseWindows\MonitorPurchWindow.xaml;PurchaseWindows\PurchaseWindow.xaml;PurchaseWindows\PurchHWKWindow.xaml;PurchaseWindows\SSDPurchWindow.xaml;SachberarbeitungWindow.xaml;Themes\Generic.xaml;
+=======
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
+13-2043123133
+
+351220932050
+32-1902538415
+MainWindow.xaml;Model\Sachbearbeitung\Windows\KundenErstellen.xaml;Model\Sachbearbeitung\Windows\KundenListe.xaml;PcKonfigurationWindow.xaml;pc_stammdaten.xaml;PurchaseWindows\CPUPurchWindow.xaml;PurchaseWindows\MainboardPurchWindow.xaml;PurchaseWindows\MonitorPurchWindow.xaml;PurchaseWindows\PurchaseWindow.xaml;PurchaseWindows\PurchHWKWindow.xaml;PurchaseWindows\SSDPurchWindow.xaml;SachberarbeitungWindow.xaml;Themes\Generic.xaml;
+>>>>>>> 5b08e51e7cf7cfcc4cf5001464b88787d36817d0
 
 True
 

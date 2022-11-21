@@ -26,15 +26,16 @@ namespace PCVerwaltung.PurchaseWindows
 
         private void CompleteBtnOrder(object sender, RoutedEventArgs e)
         {
-            ModellTxtb.Text = null;
-            HerstellerTxtb.Text = null;
-            TaktfrequenzTxtb = null;
-            PreisTxtb.Text = null;
         }
 
         private void CompleteBtnClick(object sender, RoutedEventArgs e)
         {
-
+            PurchaseMgmt.CPUtoSQL(HerstellerTxtb.Text,ModellTxtb.Text,TaktfrequenzTxtb.Text,PreisTxtb.Text);
+            
+            ModellTxtb.Text = null;
+            HerstellerTxtb.Text = null;
+            TaktfrequenzTxtb.Text = null;
+            PreisTxtb.Text = null;
         }
 
         private void BackBtnClick(object sender, RoutedEventArgs e)
