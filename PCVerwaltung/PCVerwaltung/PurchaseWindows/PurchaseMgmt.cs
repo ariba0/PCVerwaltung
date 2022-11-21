@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using PCVerwaltung.Model.HWKomponente;
 
 namespace PCVerwaltung.PurchaseWindows
 {
@@ -31,6 +32,32 @@ namespace PCVerwaltung.PurchaseWindows
                 MySqlDataReader myReader = commandDatabase.ExecuteReader();
 
                 MessageBox.Show("CPU succesfully registered");
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                // Show any error message.
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public static void MainboardtoSQL(string producer, string model, object architektur, string price)
+        {
+            price = price.Replace(',', '.');
+
+            string query = $"INSERT INTO mainboard(`producer`, `model`, `architecture`, `price`) VALUES ('{producer}','{model}','{architektur.ToString()}','{price}')";
+
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 60;
+
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("Mainboard succesfully registered");
 
                 databaseConnection.Close();
             }
