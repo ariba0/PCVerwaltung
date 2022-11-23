@@ -143,3 +143,6 @@ C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\p
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\SachberarbeitungWindow.baml
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Themes\Generic.baml
 >>>>>>> 5b08e51e7cf7cfcc4cf5001464b88787d36817d0
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\PCVerwaltung.csprojAssemblyReference.cache
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenInfo.g.cs
+C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\obj\Debug\Model\Sachbearbeitung\Windows\KundenInfo.baml

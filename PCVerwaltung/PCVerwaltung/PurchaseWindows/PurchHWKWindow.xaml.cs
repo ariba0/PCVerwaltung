@@ -31,10 +31,10 @@ namespace PCVerwaltung.PurchaseWindows
             this.Close();
         }
 
-        private void BackClick(object sender, RoutedEventArgs e)
+        private void LogoutClick(object sender, RoutedEventArgs e)
         {
-            PurchaseWindow purchWin1 = new PurchaseWindow();
-            purchWin1.Show();
+            MainWindow win1 = new MainWindow();
+            win1.Show();
             this.Close();
         }
 

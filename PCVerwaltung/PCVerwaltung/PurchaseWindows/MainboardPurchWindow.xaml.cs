@@ -26,11 +26,11 @@ namespace PCVerwaltung.PurchaseWindows
 
         private void CompleteBtnClick(object sender, RoutedEventArgs e)
         {
-            PurchaseMgmt.MainboardtoSQL(HerstellerTxtb.Text, ModellTxtb.Text, ArchitectureComboBox.SelectedItem, PreisTxtb.Text);
+            PurchaseMgmt.MainboardtoSQL(HerstellerTxtb.Text, ModellTxtb.Text, ArchitekturComboBox.SelectedIndex, PreisTxtb.Text);
 
             ModellTxtb.Text = null;
             HerstellerTxtb.Text = null;
-            ArchitectureComboBox.SelectedIndex = 0;
+            ArchitekturComboBox.SelectedIndex = -1;
             PreisTxtb.Text = null;
         }
 

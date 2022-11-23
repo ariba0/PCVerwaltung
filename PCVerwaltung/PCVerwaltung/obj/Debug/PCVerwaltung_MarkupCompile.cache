@@ -9,21 +9,12 @@ PCVerwaltung
 none
 false
 DEBUG;TRACE
-<<<<<<< HEAD
-C:\Users\arbi.gurzhikhanov\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
-14-1883397964
-
-34-476124228
-32583175414
-MainWindow.xaml;Model\Sachbearbeitung\Windows\KundenErstellen.xaml;Model\Sachbearbeitung\Windows\KundenInfo.xaml;Model\Sachbearbeitung\Windows\KundenListe.xaml;PcKonfigurationWindow.xaml;pc_stammdaten.xaml;PurchaseWindows\CPUPurchWindow.xaml;PurchaseWindows\MainboardPurchWindow.xaml;PurchaseWindows\MonitorPurchWindow.xaml;PurchaseWindows\PurchaseWindow.xaml;PurchaseWindows\PurchHWKWindow.xaml;PurchaseWindows\SSDPurchWindow.xaml;SachberarbeitungWindow.xaml;Themes\Generic.xaml;
-=======
 C:\Users\patrick.nast\Desktop\PCVerwaltung\PCVerwaltung\PCVerwaltung\App.xaml
-13-2043123133
+13-718289394
 
-342063291417
+342129301651
 32-1902538415
-MainWindow.xaml;Model\Sachbearbeitung\Windows\KundenErstellen.xaml;Model\Sachbearbeitung\Windows\KundenListe.xaml;PcKonfigurationWindow.xaml;pc_stammdaten.xaml;PurchaseWindows\CPUPurchWindow.xaml;PurchaseWindows\MainboardPurchWindow.xaml;PurchaseWindows\MonitorPurchWindow.xaml;PurchaseWindows\PurchaseWindow.xaml;PurchaseWindows\PurchHWKWindow.xaml;PurchaseWindows\SSDPurchWindow.xaml;SachberarbeitungWindow.xaml;Themes\Generic.xaml;
->>>>>>> 5b08e51e7cf7cfcc4cf5001464b88787d36817d0
+MainWindow.xaml;Model\Sachbearbeitung\Windows\KundenErstellen.xaml;Model\Sachbearbeitung\Windows\KundenInfo.xaml;Model\Sachbearbeitung\Windows\KundenListe.xaml;PcKonfigurationWindow.xaml;pc_stammdaten.xaml;PurchaseWindows\CPUPurchWindow.xaml;PurchaseWindows\MainboardPurchWindow.xaml;PurchaseWindows\MonitorPurchWindow.xaml;PurchaseWindows\PurchHWKWindow.xaml;PurchaseWindows\SSDPurchWindow.xaml;SachberarbeitungWindow.xaml;Themes\Generic.xaml;
 
 False
 

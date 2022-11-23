@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="SSDPurchWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="SSD bestellen" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontWeight="Bold"></Label>
+        <Label Content="Hersteller" HorizontalAlignment="Center" Margin="302,60,302.6,333" Width="189" Height="25"></Label>
+        <TextBox x:Name="HerstellerTxtb" Margin="302,86,302.6,309" Height="25"></TextBox>
+        <Label Content="Modell"  HorizontalAlignment="Center" Width="189" Margin="302,111,302.6,284" Height="25"></Label>
+        <TextBox x:Name="ModellTxtb" Margin="302,136,302.6,259" Height="25"></TextBox>
+        <Label Content="Speicher (GB)" HorizontalAlignment="Center" Height="25" Margin="302,161,302.6,234" Width="189"></Label>
+        <TextBox x:Name="SpeicherTxtb" Height="25" Margin="302,186,302.6,209"></TextBox>
+        <Label Content="Preis" HorizontalAlignment="Center" Height="25" Margin="302,211,302.6,184" Width="189"></Label>
+        <TextBox x:Name="PreisTxtb" Height="25" Margin="302,236,302.6,159"></TextBox>
+        <Button x:Name="CompleteOrderBtn" Content="Bestellung abschließen" Height="25" Click="CompleteBtnClick" Margin="302,284,302.6,111"></Button>
+        <Button Name="BackBtn" Content="Zurück" Height="25" Click="BackBtnClick" Margin="302,326,302.6,69"></Button>
     </Grid>
 </Window>

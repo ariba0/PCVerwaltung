@@ -29,12 +29,6 @@ namespace PCVerwaltung
             InitializeComponent();
             //InitData.GenerateUsers();
 
-            KundenSQL.UpdateLocal();
-
-
-            SachberarbeitungWindow windowSB = new SachberarbeitungWindow();
-            windowSB.Show();
-            this.Close();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -82,7 +76,7 @@ namespace PCVerwaltung
             switch (validUser)
             {
                 case (int)User.Role.Einkauf:
-                    PurchaseWindows.PurchaseWindow purch1 = new PurchaseWindows.PurchaseWindow();
+                    PurchaseWindows.PurchHWKWindow purch1 = new PurchaseWindows.PurchHWKWindow();
                     purch1.Show();
                     this.Close();
                     break;

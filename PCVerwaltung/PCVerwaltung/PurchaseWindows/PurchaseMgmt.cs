@@ -42,11 +42,12 @@ namespace PCVerwaltung.PurchaseWindows
             }
         }
 
-        public static void MainboardtoSQL(string producer, string model, object architektur, string price)
+        public static void MainboardtoSQL(string producer, string model, int architectureIndex, string price)
         {
             price = price.Replace(',', '.');
+            Architektur architecture = (Architektur)architectureIndex;
 
-            string query = $"INSERT INTO mainboard(`producer`, `model`, `architecture`, `price`) VALUES ('{producer}','{model}','{architektur.ToString()}','{price}')";
+            string query = $"INSERT INTO mainboard(`producer`, `model`, `architecture`, `price`) VALUES ('{producer}','{model}','{architecture}','{price}')";
 
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
@@ -58,6 +59,61 @@ namespace PCVerwaltung.PurchaseWindows
                 MySqlDataReader myReader = commandDatabase.ExecuteReader();
 
                 MessageBox.Show("Mainboard succesfully registered");
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                // Show any error message.
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public static void SSDtoSQL(string producer, string model, string storage, string price)
+        {
+
+            storage = storage.Replace(',', '.');
+            price = price.Replace(',', '.');
+
+            string query = $"INSERT INTO ssd(`producer`, `model`, `storage (GB)`, `price`) VALUES ('{producer}','{model}','{storage}','{price}')";
+
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 60;
+
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("SSD succesfully registered");
+
+                databaseConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                // Show any error message.
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public static void MonitortoSQL(string producer, string model, string resolution, string price)
+        {
+
+            price = price.Replace(',', '.');
+
+            string query = $"INSERT INTO monitor(`producer`, `model`, `resolution`, `price`) VALUES ('{producer}','{model}','{resolution}','{price}')";
+
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 60;
+
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("Monitor succesfully registered");
 
                 databaseConnection.Close();
             }

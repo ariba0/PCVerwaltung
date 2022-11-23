@@ -12,8 +12,8 @@
         <TextBox x:Name="HerstellerTxtb" Margin="302,86,302.6,309" Height="25"></TextBox>
         <Label Content="Modell"  HorizontalAlignment="Center" Width="189" Margin="302,111,302.6,284" Height="25"></Label>
         <TextBox x:Name="ModellTxtb" Margin="302,136,302.6,259" Height="25"></TextBox>
-        <Label Content="Architecture" HorizontalAlignment="Center" Height="25" Margin="302,161,302.6,234" Width="189"></Label>
-        <ComboBox Name="ArchitectureComboBox" Margin="302,186,302.6,209" Height="25">
+        <Label Content="Architektur" HorizontalAlignment="Center" Height="25" Margin="302,161,302.6,234" Width="189"></Label>
+        <ComboBox Name="ArchitekturComboBox" Margin="302,186,302.6,209" Height="25">
             <ComboBoxItem Content="Normal" x:Name="Normal"></ComboBoxItem>
             <ComboBoxItem Content="Small" x:Name="Small"></ComboBoxItem>
             <ComboBoxItem Content="Mini" x:Name="Mini"></ComboBoxItem>

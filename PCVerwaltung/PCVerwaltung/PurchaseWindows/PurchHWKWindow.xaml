@@ -12,6 +12,6 @@
         <Button x:Name="MainboardButton" Content="Mainboard" Click="MainboardClick" Height="200" Margin="400,240,-0.4,50.4"/>
         <Button x:Name="SSDButton" Content="SSD" Click="SSDClick" Height="200" Margin="400,40,-0.4,250.4"/>
         <Button x:Name="MonitorButton" Content="Monitor" Click="MonitorClick" Width="400" Height="200" Margin="0,240,393.6,50.4"></Button>
-        <Button x:Name="BackButton" Content="Back" Click="BackClick" Height="50" Margin="0,440,-0.4,0.4"></Button>
+        <Button x:Name="LogoutButton" Content="Logout" Click="LogoutClick" Height="50" Margin="0,440,-0.4,0.4"></Button>
     </Grid>
 </Window>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 21. Nov 2022 um 09:35
+-- Erstellungszeit: 23. Nov 2022 um 12:36
 -- Server-Version: 10.4.18-MariaDB
 -- PHP-Version: 8.0.3
 
@@ -63,6 +63,34 @@ CREATE TABLE `kunden` (
 -- --------------------------------------------------------
 
 --
+-- Tabellenstruktur für Tabelle `mainboard`
+--
+
+CREATE TABLE `mainboard` (
+  `idmainboard` int(11) NOT NULL,
+  `producer` varchar(45) DEFAULT NULL,
+  `model` varchar(45) DEFAULT NULL,
+  `architecture` varchar(45) DEFAULT NULL,
+  `price` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `monitor`
+--
+
+CREATE TABLE `monitor` (
+  `idmonitor` int(11) NOT NULL,
+  `producer` varchar(45) DEFAULT NULL,
+  `model` varchar(45) DEFAULT NULL,
+  `resolution` varchar(45) DEFAULT NULL,
+  `price` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Tabellenstruktur für Tabelle `rechnungen`
 --
 
@@ -71,6 +99,20 @@ CREATE TABLE `rechnungen` (
   `product` varchar(255) NOT NULL,
   `price` int(100) NOT NULL,
   `kunden_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `ssd`
+--
+
+CREATE TABLE `ssd` (
+  `idssd` int(11) NOT NULL,
+  `producer` varchar(45) DEFAULT NULL,
+  `model` varchar(45) DEFAULT NULL,
+  `storage (GB)` double DEFAULT NULL,
+  `price` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -119,11 +161,29 @@ ALTER TABLE `kunden`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indizes für die Tabelle `mainboard`
+--
+ALTER TABLE `mainboard`
+  ADD PRIMARY KEY (`idmainboard`);
+
+--
+-- Indizes für die Tabelle `monitor`
+--
+ALTER TABLE `monitor`
+  ADD PRIMARY KEY (`idmonitor`);
+
+--
 -- Indizes für die Tabelle `rechnungen`
 --
 ALTER TABLE `rechnungen`
   ADD PRIMARY KEY (`id`),
   ADD KEY `kunden_id` (`kunden_id`);
+
+--
+-- Indizes für die Tabelle `ssd`
+--
+ALTER TABLE `ssd`
+  ADD PRIMARY KEY (`idssd`);
 
 --
 -- Indizes für die Tabelle `user`
@@ -154,10 +214,28 @@ ALTER TABLE `kunden`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT für Tabelle `mainboard`
+--
+ALTER TABLE `mainboard`
+  MODIFY `idmainboard` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT für Tabelle `monitor`
+--
+ALTER TABLE `monitor`
+  MODIFY `idmonitor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT für Tabelle `rechnungen`
 --
 ALTER TABLE `rechnungen`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT für Tabelle `ssd`
+--
+ALTER TABLE `ssd`
+  MODIFY `idssd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints der exportierten Tabellen

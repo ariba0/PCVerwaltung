@@ -146,9 +146,6 @@
       <DependentUpon>MonitorPurchWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="PurchaseWindows\PurchaseMgmt.cs" />
-    <Compile Include="PurchaseWindows\PurchaseWindow.xaml.cs">
-      <DependentUpon>PurchaseWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="PurchaseWindows\PurchHWKWindow.xaml.cs">
       <DependentUpon>PurchHWKWindow.xaml</DependentUpon>
     </Compile>
@@ -199,10 +196,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PurchaseWindows\MonitorPurchWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="PurchaseWindows\PurchaseWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
