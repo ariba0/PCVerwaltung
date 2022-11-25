@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 23. Nov 2022 um 12:36
+-- Erstellungszeit: 25. Nov 2022 um 08:42
 -- Server-Version: 10.4.18-MariaDB
 -- PHP-Version: 8.0.3
 
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Datenbank: `pcverwaltung`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `computer`
+--
+
+CREATE TABLE `computer` (
+  `id` int(16) NOT NULL,
+  `cpu_id` int(16) NOT NULL,
+  `mainboard_id` int(16) NOT NULL,
+  `ssd_id` int(16) NOT NULL,
+  `monitor_id` int(16) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -142,6 +156,16 @@ INSERT INTO `user` (`username`, `fullname`, `password`, `role`) VALUES
 --
 
 --
+-- Indizes für die Tabelle `computer`
+--
+ALTER TABLE `computer`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `cpu_id` (`cpu_id`),
+  ADD KEY `mainboard_id` (`mainboard_id`),
+  ADD KEY `monitor_id` (`monitor_id`),
+  ADD KEY `ssd_id` (`ssd_id`);
+
+--
 -- Indizes für die Tabelle `cpu`
 --
 ALTER TABLE `cpu`
@@ -196,6 +220,12 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT für Tabelle `computer`
+--
+ALTER TABLE `computer`
+  MODIFY `id` int(16) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT für Tabelle `cpu`
 --
 ALTER TABLE `cpu`
@@ -240,6 +270,15 @@ ALTER TABLE `ssd`
 --
 -- Constraints der exportierten Tabellen
 --
+
+--
+-- Constraints der Tabelle `computer`
+--
+ALTER TABLE `computer`
+  ADD CONSTRAINT `computer_ibfk_1` FOREIGN KEY (`cpu_id`) REFERENCES `cpu` (`idcpu`),
+  ADD CONSTRAINT `computer_ibfk_2` FOREIGN KEY (`mainboard_id`) REFERENCES `mainboard` (`idmainboard`),
+  ADD CONSTRAINT `computer_ibfk_3` FOREIGN KEY (`monitor_id`) REFERENCES `monitor` (`idmonitor`),
+  ADD CONSTRAINT `computer_ibfk_4` FOREIGN KEY (`ssd_id`) REFERENCES `ssd` (`idssd`);
 
 --
 -- Constraints der Tabelle `finanzierung`
