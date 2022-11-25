@@ -12,10 +12,14 @@
         <TextBox x:Name="HerstellerTxtb" Margin="302,86,302.6,309" Height="25"></TextBox>
         <Label Content="Modell"  HorizontalAlignment="Center" Width="189" Margin="302,111,302.6,284" Height="25"></Label>
         <TextBox x:Name="ModellTxtb" Margin="302,136,302.6,259" Height="25"></TextBox>
-        <Label Content="Taktfrequenz" HorizontalAlignment="Center" Height="25" Margin="302,161,302.6,234" Width="189"></Label>
-        <TextBox x:Name="TaktfrequenzTxtb" Height="25" Margin="302,186,302.6,209"></TextBox>
-        <Label Content="Preis" HorizontalAlignment="Center" Height="25" Margin="302,211,302.6,184" Width="189"></Label>
-        <TextBox x:Name="PreisTxtb" Height="25" Margin="302,236,302.6,159"></TextBox>
+        <Label Content="Taktfrequenz (GHz)" HorizontalAlignment="Center" Height="25" Margin="191,161,413.6,234" Width="189"></Label>
+        <TextBox x:Name="TaktfrequenzTxtb" Height="25" Margin="191,186,413.6,209"></TextBox>
+        <Label Content="Preis" HorizontalAlignment="Center" Height="25" Margin="191,211,413.6,184" Width="189"></Label>
+        <TextBox x:Name="PreisTxtb" Height="25" Margin="191,236,413.6,159" TextChanged="PreisTxtb_TextChanged"></TextBox>
+        <Label Content="Anzahl Kerne" HorizontalAlignment="Center" Height="25" Margin="415,161,189.6,234" Width="189"></Label>
+        <TextBox x:Name="AnzahlKerneTxtb" Height="25" Margin="415,186,195.6,209"></TextBox>
+        <Label Content="Kühlleistung (W)" HorizontalAlignment="Center" Height="25" Width="189" Margin="415,211,189.6,184"></Label>
+        <TextBox x:Name="KühlleistungTxtb" Height="25" Margin="416,236,189.6,159"></TextBox>
         <Button x:Name="CompleteOrderBtn" Content="Bestellung abschließen" Height="25" Click="CompleteBtnClick" Margin="302,284,302.6,111"></Button>
         <Button Name="BackBtn" Content="Zurück" Height="25" Click="BackBtnClick" Margin="302,326,302.6,69"></Button>
     </Grid>

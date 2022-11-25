@@ -14,13 +14,13 @@ namespace PCVerwaltung.PurchaseWindows
     {
         static string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=pcverwaltung;";
 
-        public static void CPUtoSQL(string producer, string model, string frequence, string price)
+        public static void CPUtoSQL(string producer, string model, string frequence, string price,string anzKerne,string kühlleistung)
         {
 
             frequence = frequence.Replace(',','.');
             price = price.Replace(',', '.');
 
-            string query = $"INSERT INTO cpu(`producer`, `model`, `frequence`, `price`) VALUES ('{producer}','{model}','{frequence}','{price}')";
+            string query = $"INSERT INTO cpu(`producer`, `model`, `frequence`, `price`,`cores`,`cooling efficiency`) VALUES ('{producer}','{model}','{frequence}','{price}','{anzKerne}','{kühlleistung}')";
 
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
