@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,11 +41,31 @@ namespace PCVerwaltung.Model.Sachbearbeitung.Windows
 
         private void clickEdit(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Edit Kunden");
+            string input = Interaction.InputBox("Neuen Namen eingeben:", "Kunden Bearbeiten", "");
+            if (String.IsNullOrEmpty(input))
+            {
+                MessageBox.Show("Kein gültiger Name wurde eingegeben.");
+
+            } else
+            {
+                KundenSQL.EditKunden(kundenInfoFullname.Content.ToString(), input);
+                kundenInfoFullname.Content = input;
+            }
         }
         private void clickDelete(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Delete Kunden");
+            string input = Interaction.InputBox("Schreiben sie den KUNDEN NAMEN um den Kunden zu löschen.", "Kunden Löschen", "");
+            if (String.IsNullOrEmpty(input))
+            {
+                return;
+            }
+
+
+            if (kundenInfoFullname.Content.ToString() == input)
+            {
+                KundenSQL.RemoveKunden(kundenInfoFullname.Content.ToString());
+                ((Panel)this.Parent).Children.Remove(this);
+            }
         }
     }
 }

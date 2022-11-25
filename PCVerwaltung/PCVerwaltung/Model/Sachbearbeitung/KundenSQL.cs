@@ -40,6 +40,54 @@ namespace PCVerwaltung.Model.Sachbearbeitung
             }
         }
 
+
+        public static void RemoveKunden(string name)
+        {
+            string query = "DELETE FROM kunden WHERE fullname = '" + name + "'";
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("Kunde wurde entfernt.");
+
+                databaseConnection.Close();
+
+                _kunden = GetKunden();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public static void EditKunden(string kundenName, string newName)
+        {
+
+            string query = "UPDATE kunden SET fullname = '"+ newName +"' WHERE fullname = '"+ kundenName +"'";
+            MySqlConnection databaseConnection = new MySqlConnection(connectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+
+            try
+            {
+                databaseConnection.Open();
+                MySqlDataReader myReader = commandDatabase.ExecuteReader();
+
+                MessageBox.Show("Kunde wurde geupdated.");
+
+                databaseConnection.Close();
+
+                _kunden = GetKunden();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         public static void UpdateLocal()
         {
             _kunden = GetKunden();

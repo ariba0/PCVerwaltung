@@ -29,6 +29,10 @@ namespace PCVerwaltung
             InitializeComponent();
             //InitData.GenerateUsers();
 
+            KundenSQL.UpdateLocal();
+            SachberarbeitungWindow windowSB = new SachberarbeitungWindow();
+            windowSB.Show();
+            this.Close();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

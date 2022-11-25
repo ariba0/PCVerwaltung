@@ -5,16 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PCVerwaltung.Model.Sachbearbeitung.Windows"
              mc:Ignorable="d" 
-             Height="50" Width="500" Background="white">
+             Height="50" Width="500" Margin="0, 0, 0, 2"  Background="#efefef">
     <Grid>
         <Label Margin="20,0,0,0" Content="Test Johnson" x:Name="kundenInfoFullname" FontSize="24"/>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="right">
-            <Button Click="btnViewRechnungen" HorizontalAlignment="right" BorderBrush="White" Background="White">
+            <Button Click="btnViewRechnungen" HorizontalAlignment="right" BorderBrush="White" Background="#efefef">
                 <Image Width="32" Source="https://img.icons8.com/ios/64/1A1A1A/bill.png" HorizontalAlignment="center"/>
             </Button>
-            <Button Click="btnKundenOptions" HorizontalAlignment="right" BorderBrush="White" Background="White">
+            <Button Click="btnKundenOptions" HorizontalAlignment="right" BorderBrush="White" Background="#efefef">
                 <Image Width="32" Source="https://img.icons8.com/ios-glyphs/64/null/menu-2.png" HorizontalAlignment="center"/>
-                <Button.ContextMenu>
+                <Button.ContextMenu >
                     <ContextMenu x:Name="cmButton">
                         <MenuItem Click="clickEdit" Header="Bearbeiten" />
                         <MenuItem Click="clickDelete" Header="Kunden Löschen" />
