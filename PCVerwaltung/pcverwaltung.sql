@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 25. Nov 2022 um 08:42
+-- Erstellungszeit: 25. Nov 2022 um 10:17
 -- Server-Version: 10.4.18-MariaDB
 -- PHP-Version: 8.0.3
 
@@ -46,8 +46,17 @@ CREATE TABLE `cpu` (
   `producer` varchar(45) DEFAULT NULL,
   `model` varchar(45) DEFAULT NULL,
   `frequence` double DEFAULT NULL,
-  `price` double DEFAULT NULL
+  `price` double DEFAULT NULL,
+  `cores` int(11) DEFAULT NULL,
+  `cooling efficiency` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Daten für Tabelle `cpu`
+--
+
+INSERT INTO `cpu` (`idcpu`, `producer`, `model`, `frequence`, `price`, `cores`, `cooling efficiency`) VALUES
+(21, 'dwadwa', 'daw', 2.2, 123.12, 6, 75);
 
 -- --------------------------------------------------------
 
@@ -229,7 +238,7 @@ ALTER TABLE `computer`
 -- AUTO_INCREMENT für Tabelle `cpu`
 --
 ALTER TABLE `cpu`
-  MODIFY `idcpu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `idcpu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT für Tabelle `finanzierung`

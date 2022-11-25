@@ -30,12 +30,14 @@ namespace PCVerwaltung.PurchaseWindows
 
         private void CompleteBtnClick(object sender, RoutedEventArgs e)
         {
-            PurchaseMgmt.CPUtoSQL(HerstellerTxtb.Text,ModellTxtb.Text,TaktfrequenzTxtb.Text,PreisTxtb.Text);
+            PurchaseMgmt.CPUtoSQL(HerstellerTxtb.Text,ModellTxtb.Text,TaktfrequenzTxtb.Text,PreisTxtb.Text,AnzahlKerneTxtb.Text,KühlleistungTxtb.Text);
             
             ModellTxtb.Text = null;
             HerstellerTxtb.Text = null;
             TaktfrequenzTxtb.Text = null;
             PreisTxtb.Text = null;
+            AnzahlKerneTxtb.Text = null;
+            KühlleistungTxtb.Text = null;
         }
 
         private void BackBtnClick(object sender, RoutedEventArgs e)
@@ -43,6 +45,11 @@ namespace PCVerwaltung.PurchaseWindows
             PurchHWKWindow PurchHWKWin1 = new PurchHWKWindow();
             PurchHWKWin1.Show();
             this.Close();
+        }
+
+        private void PreisTxtb_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
